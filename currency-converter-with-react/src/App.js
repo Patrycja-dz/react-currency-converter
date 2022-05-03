@@ -1,24 +1,14 @@
-import logo from './logo.svg';
+import React from 'react';
+import HeaderComponent from './components/HeaderComponent';
+import FormComponent from './components/FormComponent';
 import './App.css';
-
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+ <>
+      <HeaderComponent/>
+      <FormComponent/>
+      <p className='converter__result js-result'></p>
+ </>
   );
 }
 
