@@ -1,6 +1,9 @@
 import React from 'react';
 
- function FormComponent() {
+ function FormComponent(props) {
+     const{
+         currencyOptions
+     } = props
     return (
         <form className="converter__inputs js-form">
         <div className="converter__input">
@@ -9,6 +12,9 @@ import React from 'react';
         </div>
         <div className="converter__input">
             <select name="select" id="js-select" className="converter__select js-currencies">
+                {currencyOptions.map(option => (
+                    <option key={option.code}>{option.code}</option>
+                ))}
                 <option value="">Wybierz walutę</option>
             </select>
         </div>
