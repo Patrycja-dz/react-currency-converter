@@ -96,7 +96,11 @@ html {
   text-align: center;
   padding: 1rem;
   font-size: 1.4rem;
+  border: .3rem dashed var(--heading-color);
 
+}
+.converter__result span{
+  font-weight: bold;
 }
 
 .loader {
